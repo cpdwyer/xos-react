@@ -19,7 +19,7 @@ const firstTurn = () => {
   const f = Math.random();
   const str = f.toString();
   const lastDigit = str.charAt(str.length - 1);
-  return parseInt(lastDigit, 10) % 2 === 0 ? "X" : "0";
+  return parseInt(lastDigit, 10) % 2 === 0 ? "X" : "O";
 };
 
 const App = () => {
