@@ -1,0 +1,71 @@
+.Board {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+}
+
+.Box {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Disabled {
+  cursor: not-allowed;
+}
+
+.A0 {
+  border-bottom: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+}
+
+.A1 {
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+}
+
+.A2 {
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+
+.B0 {
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+}
+
+.B1 {
+  border: 3px solid #ffffff;
+}
+
+.B2 {
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  border-left: 3px solid #ffffff;
+}
+
+.C0 {
+  border-top: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+}
+
+.C1 {
+  border-left: 3px solid #ffffff;
+  border-top: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+}
+
+.C2 {
+  border-left: 3px solid #ffffff;
+  border-top: 3px solid #ffffff;
+}

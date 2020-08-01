@@ -1,0 +1,30 @@
+.GameEnd {
+  position: absolute;
+  margin: 16px;
+  top: 0;
+  left: 0;
+  border: 3px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 306px;
+  width: 306px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MessageContainer {
+  border: 1px solid #000;
+  border-radius: 4px;
+  background-color: azure;
+  padding: 16px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ButtonContainer {
+  margin-top: 16px;
+}
+
+.Button {
+  margin: 0px 8px;
+}
