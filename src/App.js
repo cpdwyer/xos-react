@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Board from "./components/Board/Board";
 import EndGame from "./components/EndGame/EndGame";
 import TurnIndicator from "./components/TurnIndicator/TurnIndicator";
+import ScoreBoard from "./components/ScoreBoard/ScoreBoard";
 
 import checkForWin from "./checkForWin";
 import "./App.css";
@@ -27,15 +28,17 @@ const App = () => {
   const [gameEnd, setGameEnd] = useState(false);
   const [turns, setTurns] = useState(0);
   const [message, setMessage] = useState(<span />);
+  const [history, setHistory] = useState([]);
 
   const handleNewGame = () => {
     setBoard(generateNewBoard());
-    setGameEnd(false);
     setTurns(0);
     setCurrentPlayer(firstTurn());
+    setGameEnd(false);
   };
 
   const handleResetGame = () => {
+    setHistory([]);
     handleNewGame();
   };
 
@@ -68,6 +71,7 @@ const App = () => {
         )
       );
       setGameEnd(true);
+      setHistory([...history, winner ? currentPlayer : "-"]);
     }
     setCurrentPlayer(currentPlayer === "X" ? "O" : "X");
   };
@@ -87,6 +91,7 @@ const App = () => {
         </div>
       </div>
       <TurnIndicator currentPlayer={currentPlayer} gameEnd={gameEnd} />
+      <ScoreBoard history={history} />
     </div>
   );
 };

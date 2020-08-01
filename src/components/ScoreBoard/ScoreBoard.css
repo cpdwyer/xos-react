@@ -1,0 +1,38 @@
+.History {
+  margin: 16px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 0px 16px;
+  max-height: calc(100vh - 32px);
+  overflow: auto;
+}
+
+.HistoryRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.HistoryBox {
+  width: 64px;
+  min-height: 16px;
+  text-align: center;
+}
+
+.HistoryBottomBorder {
+  border-bottom: 1px solid #fff;
+}
+
+.HistoryBorderRight {
+  border-right: 1px solid #fff;
+}
+
+.Score {
+  margin: 0;
+}
+
+.Counters {
+  margin: 8px;
+}
